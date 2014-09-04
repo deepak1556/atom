@@ -47,7 +47,7 @@ class EditorView extends View
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-"
     preferredLineLength: 80
     tabLength: 2
-    softWrap: false
+    softWrapped: false
     softTabs: true
     softWrapAtPreferredLineLength: false
     scrollSensitivity: 40
@@ -86,7 +86,7 @@ class EditorView extends View
       props.placeholderText = placeholderText
       @editor ?= new Editor
         buffer: new TextBuffer
-        softWrap: false
+        softWrapped: false
         tabLength: 2
         softTabs: true
         mini: mini
@@ -331,9 +331,9 @@ class EditorView extends View
 
   # Public: Enables/disables soft wrap on the editor.
   #
-  # * `softWrap` A {Boolean} which, if `true`, enables soft wrap
-  setSoftWrap: (softWrap) ->
-    @editor.setSoftWrap(softWrap)
+  # * `softWrapped` A {Boolean} which, if `true`, enables soft wrap
+  setSoftWrapped: (softWrapped) ->
+    @editor.setSoftWrapped(softWrapped)
 
   # Public: Set whether invisible characters are shown.
   #
