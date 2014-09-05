@@ -37,6 +37,7 @@
     "guid": "0.0.10",
     "jasmine-tagged": "^1.1.2",
     "less-cache": "0.14.0",
+    "mercury": "^6.0.2",
     "mixto": "^1",
     "mkdirp": "0.3.5",
     "nslog": "^1.0.1",
